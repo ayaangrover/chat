@@ -19,7 +19,7 @@ async function getMessages() {
   let messagesDiv = document.getElementById('message-div');
   messagesDiv.innerHTML = '';
 
-  for (let i = messages.length - 1; i > 0; i--) {
+  for (let i = messages.length - 1; i >= 0; i--) {
     messagesDiv.innerHTML += '<p>' + messages[i] + '</p>';
   }
 }

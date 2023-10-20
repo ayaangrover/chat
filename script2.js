@@ -10,22 +10,6 @@ async function sendMessage() {
   let name = nameInput.value;
   let time = Date();
   
-  //IP ADRESS CHECKING
-  // $.getJSON("https://api.ipify.org?format=json", function(data) {
-        
-  //     // $("#gfg").html(data.ip);
-  // })
-  // let ipAddress = data.ip;
-  // console.log(data.ip)
-
-  //PASSWORD CHECKING
-  // if (pwd.length === 0) {
-  //   let fullUrl = url + 'send/' + message + ' (' + name + ')' + ' (' + time + ')';
-  //   await fetch(fullUrl);
-  // } else {
-  //   console.error('wrong password')
-  // }
-  
   let fullUrl = url + 'send/' + message + ' (' + name + ')' + ' (' + time + ')';
   await fetch(fullUrl);
 }

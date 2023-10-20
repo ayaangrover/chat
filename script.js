@@ -2,10 +2,12 @@ const url = 'https://aero.ayaangrover2.repl.co/';
 
 async function sendMessage() {
   let messageInput = document.getElementById('message-input');
+  let nameInput = document.getElementById('name-input');
   let message = messageInput.value;
-  let fullUrl = url + 'send/' + message;
+  let name = nameInput.value;
+  let time = Date();
+  let fullUrl = url + 'send/' + message + ' (' + name + ', ' + time + ')';
   await fetch(fullUrl);
-
 }
 
 async function getMessages() {

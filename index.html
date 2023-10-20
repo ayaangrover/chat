@@ -13,11 +13,15 @@
 <body>
   <div id="content">
     <h1>chat</h1>
-    <label for="message-input">Message</label>
-    <input type="text" id="message-input" placeholder="your message" required="true">
-    <label for="name-input">Name</label>
-    <input type="text" id="name-input" placeholder="your name" required="true">
-    <button onclick="sendMessage()">send</button>
+    <form>
+      <label for="message-input">Message</label>
+      <input type="text" id="message-input" placeholder="your message" required="true">
+      <label for="name-input">Name</label>
+      <input type="text" id="name-input" placeholder="your name" required="true">
+      <!-- <label for="name-input">Password</label> -->
+      <!-- <input type="password" id="pwd-input" placeholder="password" required="false"> -->
+      <button onclick="sendMessage()">send</button>
+    </form>
     <div id="message-div"></div>
   </div>
 

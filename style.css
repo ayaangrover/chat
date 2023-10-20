@@ -39,7 +39,7 @@ h1{
     font-size: 40px;
 }
 
-#message-input, #name-input {
+#message-input, #name-input, #pwd-input {
     background-color: #ffffff00;
     backdrop-filter: blur(2000000px);
 }

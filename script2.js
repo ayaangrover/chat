@@ -3,15 +3,29 @@ const url = 'https://aero.ayaangrover2.repl.co/';
 async function sendMessage() {
   let messageInput = document.getElementById('message-input');
   let nameInput = document.getElementById('name-input');
+  let pwd = document.getElementById('pwd-input').value;
+  pwd=String(pwd)
+  console.log(pwd)
   let message = messageInput.value;
   let name = nameInput.value;
   let time = Date();
+  
+  //IP ADRESS CHECKING
   // $.getJSON("https://api.ipify.org?format=json", function(data) {
         
   //     // $("#gfg").html(data.ip);
   // })
   // let ipAddress = data.ip;
   // console.log(data.ip)
+
+  //PASSWORD CHECKING
+  // if (pwd.length === 0) {
+  //   let fullUrl = url + 'send/' + message + ' (' + name + ')' + ' (' + time + ')';
+  //   await fetch(fullUrl);
+  // } else {
+  //   console.error('wrong password')
+  // }
+  
   let fullUrl = url + 'send/' + message + ' (' + name + ')' + ' (' + time + ')';
   await fetch(fullUrl);
 }
